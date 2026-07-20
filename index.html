@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="G. Mahesh Babu - Senior Application Security Engineer specializing in VAPT, SAST, DAST, SCA and DevSecOps.">
+    <title>G. Mahesh Babu | Application Security Engineer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 17, 32, 0.95);
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: #cbd5e1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0b1120, #111827);
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            color: #38bdf8;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            margin-bottom: 15px;
+            color: #f8fafc;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            max-width: 750px;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #0b1120;
+        }
+
+        .secondary {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .section-title {
+            font-size: 34px;
+            color: #f8fafc;
+            margin-bottom: 35px;
+        }
+
+        .section-title span {
+            color: #38bdf8;
+        }
+
+        .about-text {
+            max-width: 900px;
+            color: #cbd5e1;
+            font-size: 17px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+        }
+
+        .skill {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 22px;
+            text-align: center;
+            border-radius: 8px;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+
+        .experience {
+            border-left: 3px solid #38bdf8;
+            padding-left: 25px;
+            max-width: 900px;
+        }
+
+        .experience h3 {
+            color: #f8fafc;
+            font-size: 24px;
+        }
+
+        .experience h4 {
+            color: #38bdf8;
+            margin: 5px 0 15px;
+        }
+
+        .experience p {
+            color: #cbd5e1;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #111827;
+            border: 1px solid #1e293b;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .project a {
+            color: #38bdf8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .cert {
+            background: #111827;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #1e293b;
+            color: #e2e8f0;
+        }
+
+        .contact-box {
+            background: #111827;
+            padding: 30px;
+            border: 1px solid #1e293b;
+            border-radius: 8px;
+            max-width: 700px;
+        }
+
+        .contact-box p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact-box a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            border-top: 1px solid #1e293b;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            section {
+                padding: 75px 6%;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">MB.</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="tag">APPLICATION SECURITY ENGINEER</div>
+
+            <h1>G. Mahesh Babu</h1>
+
+            <h2>VAPT | SAST | DAST | SCA | DevSecOps</h2>
+
+            <p>
+                Senior Application Security Engineer with 5+ years of experience
+                securing web applications through vulnerability assessment,
+                penetration testing, secure code review and application security
+                testing.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="https://github.com/mahesh-appsec" target="_blank" class="btn secondary">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            I am an Application Security Engineer specializing in VAPT, SAST, DAST,
+            SCA and DevSecOps security practices. I have hands-on experience in
+            performing web application security assessments, penetration testing,
+            secure code review and vulnerability analysis across Banking,
+            E-Commerce and Healthcare environments.
+
+            <br><br>
+
+            My experience includes automated and manual security testing,
+            vulnerability validation, false-positive analysis, remediation review
+            and security retesting. I also have practical awareness of AI and LLM
+            application security risks aligned with the OWASP Top 10 for LLM Applications.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Core <span>Expertise</span></h2>
+
+        <div class="skills">
+            <div class="skill">VAPT</div>
+            <div class="skill">Web Application Security</div>
+            <div class="skill">DAST</div>
+            <div class="skill">SAST</div>
+            <div class="skill">SCA</div>
+            <div class="skill">Secure Code Review</div>
+            <div class="skill">DevSecOps</div>
+            <div class="skill">Penetration Testing</div>
+            <div class="skill">Vulnerability Management</div>
+            <div class="skill">AI Application Security</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Professional <span>Experience</span></h2>
+
+        <div class="experience">
+            <h3>Senior Application Security Engineer</h3>
+            <h4>HCLTech | May 2022 - Present</h4>
+
+            <p>
+                Performing application security assessments across web applications
+                using DAST, SAST and SCA methodologies. Experienced in manual security
+                testing, vulnerability validation, false-positive analysis, security
+                reporting and remediation retesting.
+
+                <br><br>
+
+                Working with security tools including AppScan on Cloud, Fortify,
+                WebInspect, Snyk, Black Duck, OWASP Dependency-Check and Burp Suite.
+                Supporting DevSecOps security integration and collaborating with
+                development and application teams to improve application security posture.
+            </p>
+        </div>
+
+        <br><br>
+
+        <div class="experience">
+            <h3>Security Specialist</h3>
+            <h4>Cognizant | July 2021 - January 2022</h4>
+
+            <p>
+                Conducted VAPT, DAST, SAST, SCA and FPA security assessments.
+                Identified OWASP Top 10 vulnerabilities, prepared security reports,
+                collaborated with development teams and performed remediation validation.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Web VAPT Methodology</h3>
+                <p>
+                    Structured methodology covering reconnaissance, vulnerability
+                    assessment, manual validation, reporting and retesting.
+                </p>
+                <a href="https://github.com/mahesh-appsec/web-vapt-methodology" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>SAST Secure Code Review</h3>
+                <p>
+                    Secure code review methodology covering source code analysis,
+                    vulnerability triage and remediation validation.
+                </p>
+                <a href="https://github.com/mahesh-appsec/sast-secure-code-review" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>DAST Testing Methodology</h3>
+                <p>
+                    DAST assessment lifecycle covering automated scanning, manual
+                    validation, false-positive analysis and retesting.
+                </p>
+                <a href="https://github.com/mahesh-appsec/dast-testing-methodology" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>SCA Methodology</h3>
+                <p>
+                    Software Composition Analysis methodology for identifying
+                    vulnerable application dependencies and supporting remediation.
+                </p>
+                <a href="https://github.com/mahesh-appsec/sca-methodology" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>OWASP LLM Security Notes</h3>
+                <p>
+                    Practical learning notes on OWASP Top 10 for LLM Applications
+                    and key AI application security risks.
+                </p>
+                <a href="https://github.com/mahesh-appsec/owasp-llm-security-notes" target="_blank">
+                    View Project →
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2 class="section-title">Certifications & <span>Training</span></h2>
+
+        <div class="certifications">
+            <div class="cert">Certified Ethical Hacker (CEH)</div>
+            <div class="cert">Certified Application Security Engineer (CASE)</div>
+            <div class="cert">AppScan on Cloud</div>
+            <div class="cert">AWS Cloud Practitioner Essentials</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+
+        <div class="contact-box">
+            <p>📧 Email: <a href="mailto:maheshbabug9178@gmail.com">maheshbabug9178@gmail.com</a></p>
+
+            <p>💼 LinkedIn:
+                <a href="https://www.linkedin.com/in/mahesh-babu-443928293" target="_blank">
+                    LinkedIn Profile
+                </a>
+            </p>
+
+            <p>💻 GitHub:
+                <a href="https://github.com/mahesh-appsec" target="_blank">
+                    github.com/mahesh-appsec
+                </a>
+            </p>
+
+            <p>🔐 Open to Application Security and Cybersecurity opportunities.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 G. Mahesh Babu | Application Security Engineer
+    </footer>
+
+</body>
+</html>
